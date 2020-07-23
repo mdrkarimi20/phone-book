@@ -1,0 +1,45 @@
+%border {
+    border: 1px solid #d9d8d8;
+}
+
+.table {
+    font-size: 1rem;
+    @extend %border;
+}
+
+.table td {
+    @extend %border;
+}
+
+.table th {
+    background-color: black;
+    color: white;
+    @extend %border;
+}
+
+.table tr {
+    background-color: #f2f2f2;
+}
+
+.table-phone {
+    display: flex;
+}
+
+#form {
+    transition: margin 0.5s;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+#form {
+    width: 272px;
+    margin-right: -272px;
+}
+
+#form.show {
+    margin-right: 0;
+}
